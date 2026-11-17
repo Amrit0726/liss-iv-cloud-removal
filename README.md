@@ -64,8 +64,6 @@ The saved demo figure in `checker_outputs/onnx_demo_grid.png` reports **average 
 ├── isro_analysis.ipynb       # Data-mining and image-analysis notebook
 ├── model_train.ipynb         # Model-training and ONNX export experiments
 ├── checker_outputs/          # Saved model-checking visualizations
-├── demo_patches/             # Optional clear .npy patches for demo mode
-├── lissiv_data/              # Local source imagery and scene metadata
 ├── Dockerfile                # Container setup for the Streamlit app
 ├── requirements.txt          # Inference/deployment dependencies
 ├── .gitattributes            # Git LFS rules for large model files
@@ -73,7 +71,7 @@ The saved demo figure in `checker_outputs/onnx_demo_grid.png` reports **average 
 └── .dockerignore
 ```
 
-Large source imagery and dataset patches are not committed by default. Download them from the Kaggle or ISRO links above and keep them in the expected local folders. The ONNX model is configured for Git LFS; install Git LFS and run `git lfs install` before committing it.
+`lissiv_data/` and `demo_patches/` are local-only folders and are intentionally excluded from Git. Download or prepare those files using the Kaggle or ISRO links above. The ONNX model is configured for Git LFS; install Git LFS and run `git lfs install` before committing it.
 
 ## Run the web app locally
 
@@ -92,6 +90,8 @@ docker run --rm -p 7860:7860 terraclear
 ```
 
 Then open `http://localhost:7860`.
+
+The Docker build excludes local imagery and demo patches. Image uploads still work, but random demo-patch mode requires suitable `.npy` patches to be made available inside the container.
 
 ## Prepare LISS-IV patches
 
