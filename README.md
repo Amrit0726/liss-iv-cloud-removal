@@ -1,10 +1,10 @@
 # TerraClear
 
-### LISS-IV satellite cloud removal and data analysis
+### LISS-IV satellite data analysis and cloud removal 
 
 TerraClear is a Data Mining and Analytics (DMA) project by **Amrit Noor Singh** and **Aryan Gupta**. The project explores how cloud cover affects satellite imagery and how image reconstruction can help make obscured scenes easier to interpret.
 
-The team developed the project workflow, including image preparation, patch generation, cloud-mask experiments, model-training experiments, data analysis, evaluation, and a web demo. The satellite imagery is from ISRO's LISS-IV sensor; ISRO is acknowledged as the data source and is not affiliated with this project.
+We developed the project workflow, including image preparation, patch generation, cloud-mask experiments, model-training experiments, data analysis, evaluation, and a web demo. The satellite imagery is from ISRO's LISS-IV sensor; ISRO is acknowledged as the data source.
 
 ## Project links
 
@@ -12,10 +12,10 @@ Add the final links here:
 
 | Resource | Link |
 |---|---|
-| Hugging Face live demo | `ADD_HUGGING_FACE_SPACE_URL` |
-| Kaggle dataset | `ADD_KAGGLE_DATASET_URL` |
-| ISRO imagery source | `ADD_ISRO_DATA_SOURCE_URL` |
-| Project presentation or video | `ADD_PRESENTATION_OR_VIDEO_URL` |
+| Hugging Face live demo | `https://huggingface.co/spaces/Amrit2607/liss4-cloud-removal` |
+| Kaggle dataset | `https://www.kaggle.com/datasets/amritnoorsingh/isro-data-patches` |
+| ISRO imagery source | `https://bhoonidhi.nrsc.gov.in/bhoonidhi/index.html` |
+
 
 ## The problem
 
@@ -122,7 +122,7 @@ The training notebook uses Kaggle paths. Update its dataset paths to match the K
 
 ## Team
 
-- **Amrit Noor Singh**
-- **Aryan Gupta**
+- **Amrit Noor Singh(24117003)**
+- **Aryan Gupta(24117005)**
 
-DMA academic project. Not an official ISRO product or service.
+
