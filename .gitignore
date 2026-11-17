@@ -1,0 +1,21 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+*.py[cod]
+
+# Keep source satellite rasters out of Git; use the dataset link instead.
+lissiv_data/
+*.tif
+*.tiff
+
+# Local training data and generated checkpoints.
+data/
+checkpoints/
+logs/
+*.pth
+*.pt
+
+# Demo patches are dataset samples; add them only if redistribution is allowed.
+demo_patches/*.npy
